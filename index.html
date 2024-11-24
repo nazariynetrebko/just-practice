@@ -16,7 +16,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <title>Simply Chocolate</title>
   </head>
@@ -78,10 +78,10 @@
           <div class="button-container">
             <button class="btn buy-btn" type="button">Buy now</button>
             <button class="btn info-btn" type="button">How it's made</button>
-            <a class="scroll-down" href="#benefits"> scroll down </a>
-            <a class="icon-down-link" href="#benefits">
-              <svg width="22" height="22" fill="none" class="scroll-down-icon">
-                <use href="./images/icons.svg#icon-scroll-down"></use>
+            <a class="scroll-down" href="#benefits">
+              scroll down
+              <svg width="38" height="38" fill="none" class="scroll-down-icon">
+                <use href="./images/icons.svg#icon-arrow-down2"></use>
               </svg>
             </a>
           </div>
@@ -94,6 +94,11 @@
 
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="icon-border">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -103,6 +108,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="icon-border">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -113,6 +123,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="icon-border">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
@@ -133,6 +148,9 @@
           </h2>
           <ul class="ingredient-list">
             <li class="ingredient-item">
+              <svg class="ingredient-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
               <img
                 class="ingredient-image"
                 src="./images/ingrtedients/img-1.png"
@@ -141,6 +159,9 @@
               <h3 class="ingredient white-text">MILK CHOCOLATE</h3>
             </li>
             <li class="ingredient-item">
+              <svg class="ingredient-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
               <img
                 class="ingredient-image"
                 src="./images/ingrtedients/img-2.png"
@@ -149,6 +170,9 @@
               <h3 class="ingredient">MILK</h3>
             </li>
             <li class="ingredient-item">
+              <svg class="ingredient-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
               <img
                 class="ingredient-image"
                 src="./images/ingrtedients/img-3.png"
@@ -158,6 +182,9 @@
               <h3 class="ingredient white-text">NUTS</h3>
             </li>
             <li class="ingredient-item">
+              <svg class="ingredient-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
               <img
                 class="ingredient-image"
                 src="./images/ingrtedients/img-4.png"
@@ -167,6 +194,9 @@
               <h3 class="ingredient">SEMI - SWEET CHOCOLATE</h3>
             </li>
             <li class="ingredient-item">
+              <svg class="ingredient-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
               <img
                 class="ingredient-image"
                 src="./images/ingrtedients/img-5.png"
@@ -176,6 +206,9 @@
               <h3 class="ingredient white-text">CACAO</h3>
             </li>
             <li class="ingredient-item">
+              <svg class="ingredient-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
               <img
                 class="ingredient-image"
                 src="./images/ingrtedients/img-6.png"
@@ -185,6 +218,9 @@
               <h3 class="ingredient">RASPBERRY</h3>
             </li>
             <li class="ingredient-item">
+              <svg class="ingredient-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
               <img
                 class="ingredient-image"
                 src="./images/ingrtedients/img-7.png"
@@ -199,12 +235,17 @@
 
       <section class="made-section" id="made">
         <div class="container">
-          <h2 class="section-title"
-            >How it's <span class="accent">made</span>?</h2
-          >
+          <h2 class="section-title">
+            How it's <span class="accent">made</span>?
+          </h2>
           <div class="made-wrap">
             <div class="made-img-container">
               <img src="./images/made/image.jpg" alt="" />
+              <button class="play-button">
+                <svg class="icon-play" width="44" height="44">
+                  <use href="./images/icons.svg#icon-play"></use>
+                </svg>
+              </button>
             </div>
             <div class="made-description-container">
               <h3 class="made-description-title">
@@ -411,22 +452,55 @@
           <h2 class="section-title"><span class="accent">Top</span> sellers</h2>
           <ul class="sellers-list">
             <li class="sellers-list-item">
-              <img src="./images/sellers/img-1.jpg" alt="" />
               <div class="sellers-container">
-                <h3 class="sellers-title">CHOCOLATE WITH NUTS</h3>
+                <img
+                  src="./images/sellers/img-1.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
               </div>
+              <h3 class="sellers-title">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="sellers-list-item">
-              <img src="./images/sellers/img-2.jpg" alt="" />
               <div class="sellers-container">
-                <h3 class="sellers-title">CHOCOLATE WITH FRUITS</h3>
+                <img
+                  src="./images/sellers/img-2.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
               </div>
+              <h3 class="sellers-title">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="sellers-list-item">
-              <img src="./images/sellers/img-3.jpg" alt="" />
               <div class="sellers-container">
-                <h3 class="sellers-title">DARK CHOCOLATE</h3>
+                <img
+                  src="./images/sellers/img-3.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
               </div>
+              <h3 class="sellers-title">DARK CHOCOLATE</h3>
             </li>
           </ul>
         </div>
