@@ -76,7 +76,10 @@
             of pure delight!
           </h1>
           <div class="button-container">
-            <button class="btn buy-btn" type="button">Buy now</button>
+            <button data-modal-open class="btn buy-btn" type="button">
+              Buy now</button
+            >
+
             <button class="btn info-btn" type="button">How it's made</button>
             <a class="scroll-down" href="#benefits">
               scroll down
@@ -612,8 +615,119 @@
               <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+
+          <div class="form-wrap">
+            <form class="subscribe-form">
+              <label class="subscribe-label" for="subscribe"></label>
+              <input
+                name="subscribe"
+                id="subscribe"
+                class="subscribe-input"
+                type="text"
+                placeholder="Enter your email"
+              />
+
+              <button class="subscribe-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button data-modal-close class="close-btn" type="button">
+          <svg class="close-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close2"></use>
+          </svg>
+        </button>
+        <p class="form-title"
+          >LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span></p
+        >
+
+        <form action="" class="modal-form">
+          <div class="input-wrap">
+            <label class="form-label" for="user">Name</label>
+            <div class="icon-wrap">
+              <input
+                class="form-input"
+                type="text"
+                name="user"
+                id="user"
+                required
+              />
+              <svg class="input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-wrap">
+            <label class="form-label" for="email">Email</label>
+            <div class="icon-wrap">
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+              />
+              <svg class="input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-wrap">
+            <label class="form-label" for="tel">Phone number</label>
+            <div class="icon-wrap">
+              <input
+                class="form-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                autocomplete="tel"
+                required
+              />
+              <svg class="input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="textarea-wrap">
+            <label class="form-label" for="comment">Comment</label>
+            <textarea
+              class="form-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-wrap">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              value="true"
+            />
+            <label class="checkbox-label" for="checkbox">
+              <span class="checkbox-span">
+                <svg class="checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
